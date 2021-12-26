@@ -1,96 +1,277 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
 
 * {
-    direction: rtl;
-    box-sizing: border-box;
-    font-family: 'Aref Ruqaa', serif;
-    padding: 0;
-    margin: 0;
+	direction: rtl;
+	box-sizing: border-box;
+	font-family: "Aref Ruqaa", serif;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    background: url("./gg.jpg");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 100px;
+	background: url("./gg.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding-bottom: 100px;
 }
 
 h1 {
-    color: rgb(213, 218, 218);
-    text-align: center;
-    font-weight: bold;
-    font-size: 12vw;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+	color: rgb(213, 218, 218);
+	text-align: center;
+	font-weight: bold;
+	font-size: 12vw;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+    text-shadow: 10px 10px rgba(0, 0, 0, 0.753);
 }
 
 .countdown-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .countdown-container * {
-    margin: 5px;
-    color: black;
-    background-color: rgb(145, 151, 170);
-    border-radius: 10px;
+	margin: 5px;
+	color: black;
+	background-color: rgb(145, 151, 170);
+	border-radius: 10px;
 }
 
 .big-text {
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 1;
-    margin: 1rem 2rem;
-
+	font-weight: bold;
+	font-size: 6rem;
+	line-height: 1;
+	margin: 1rem 2rem;
 }
 
 .countdown-el {
-    text-align: center;
-    box-shadow: 0px 0px 20px 20px rgb(10, 4, 34);
+	text-align: center;
+	box-shadow: 0px 0px 20px 20px rgb(10, 4, 34);
 }
 
 .countdown-el span {
-    font-size: 2.3rem;
+	font-size: 2.3rem;
 }
 
 .card {
-    font-size: 8vw;
-    background-color: rgba(2, 20, 54, 0.637);
-    color: white;
-    width: 45%;
-    height: 200px;
-    margin-top: 30px;
-    border-radius: 12px;
-    transition: 1s;
+	font-size: 8vw;
+	background-color: rgba(2, 20, 54, 0.637);
+	color: white;
+	width: 45%;
+	height: 200px;
+	margin-top: 30px;
+	border-radius: 12px;
+	transition: 1s;
+    padding: 5px;
 }
 
+.open {
+    font-size: 4vw;
+    height: auto;
+}
+
+.open img {
+    height: 100%;
+    top: 0;
+}
 
 img {
-    position: relative;
-    background-size: cover;
-    float: left;
-    width: 40%;
-    height: 200px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+	position: relative;
+	background-size: cover;
+	width: 40%;
+	height: 190px;
+    border-radius: 12px;
 }
 
-.show {
-    top: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    border-bottom-left-radius: 100%;
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
-        width: 95%;
-        font-size: 20vw;
-    }
+	.card {
+		width: 95%;
+		font-size: 18vw;
+	}
+}
+
+
+
+
+
+
+
+
+/*the envelope effect*/
+
+.suggestion {
+	position: relative;
+}
+
+.EnvBtn {
+	direction: ltr;
+	box-sizing: border-box;
+	background-color: #cabd06;
+	width: 11vw;
+	top: 0px;
+	position: relative;
+	height: 50px;
+	font-weight: bold;
+	padding-left: 46px;
+	border-color: #b7b8b6;
+	color: black;
+	text-shadow: 1px 1px 5px #505050;
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: right;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 1vw;
+	line-height: 1.42857143;
+	border-radius: 4px;
+}
+
+.EnvBtn * {
+	box-sizing: border-box;
+}
+
+.EnvBtn:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.EnvBtn:hover #envelope_wrap {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#envelope_wrap {
+	position: absolute;
+	/*   top: 50px; */
+	width: 50px;
+	height: 25px;
+	margin: auto;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: box-shadow 500ms ease-in-out;
+	animation: wiggle 5s infinite;
+}
+
+.EnvBtn:hover #envelope_wrap .fold {
+	transform: rotateX(180deg);
+}
+
+.EnvBtn:hover #envelope_wrap .sheet {
+	bottom: 10px;
+}
+
+#envelope_wrap .envelope {
+	position: absolute;
+	border-bottom: 15px solid #f4f1f1;
+	border-right: 25px solid #efefef;
+	border-left: 25px solid #efefef;
+	border-top: 15px solid transparent;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	z-index: 8;
+}
+
+#envelope_wrap .fold {
+	position: absolute;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 15px solid #cfcdcd;
+	transform: perspective(500px);
+	transform-origin: top center;
+	transition: transform 1s ease-in-out;
+	z-index: 5;
+}
+
+#envelope_wrap .bg {
+	position: absolute;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 15px solid #cbc9c9;
+	transform: perspective(500px);
+	transform-origin: top center;
+	transition: transform 500ms ease-in-out;
+	z-index: 1;
+}
+
+#envelope_wrap .sheet {
+	position: absolute;
+	bottom: 0;
+	left: 7px;
+	width: 35px;
+	height: 15px;
+	margin: auto;
+	background-color: #fff;
+	z-index: 4;
+	transition: bottom 600ms ease-in-out;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.paper {
+	width: 30px;
+	height: 15px;
+	margin: 0 auto;
+	position: absolute;
+	left: 2.5px;
+	top: -10px;
+}
+
+.paper:before,
+.paper:after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	background: #9d9a9a;
+	height: 2px;
+}
+
+.paper:before {
+	top: 14px;
+	width: 25px;
+}
+
+.paper:after {
+	right: 1px;
+	top: 20px;
+	box-shadow: 0 8px 0 #9d9a9a, 0 8px 0 #9d9a9a, 0 8px 0 #9d9a9a;
+	/*     0 40px 0 #e3f1fc; */
+}
+
+.space {
+	width: 25px;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	80% {
+		transform: rotate(0deg);
+	}
+
+	85% {
+		transform: rotate(5deg);
+	}
+
+	95% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
 }

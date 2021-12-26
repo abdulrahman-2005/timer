@@ -1,68 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Countdown Timer</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-</head>
+	<body>
+		<h1>كل سنة وانت طيب يا بابا</h1>
 
-<body>
-    <h1>كل سنة وانت طيب يا بابا</h1>
+		<div class="countdown-container" style="direction: ltr">
+			<div class="countdown-el days-c">
+				<p class="big-text" id="days">0</p>
+				<span>أيام</span>
+			</div>
+			<div class="countdown-el hours-c">
+				<p class="big-text" id="hours">0</p>
+				<span>ساعات</span>
+			</div>
+			<div class="countdown-el mins-c">
+				<p class="big-text" id="mins">0</p>
+				<span>دقائق</span>
+			</div>
+			<div class="countdown-el seconds-c">
+				<p class="big-text" id="seconds">0</p>
+				<span>ثوان</span>
+			</div>
+		</div>
 
-    <div class="countdown-container" style="direction: ltr;">
+			<p style="font-size: 12vw; margin-top: 100px">الرسائل الواردة ❤️</p>
+		
+            <div class="card" id="dodo">
+                <p">
+                    <img src="dodo.jpg" alt="" class="left"/>
+                    هداية
+                </p>
+            </div>
+            <div class="card" id="dodo">
+                <p>
+                    <img src="dodo.jpg" alt="" class="right"/>
+                    عبدالرحمن
+                </p>
+            </div>
         
-        <div class="countdown-el days-c">
-            <p class="big-text" id="days">0</p>
-            <span>أيام</span>
-        </div>
-        <div class="countdown-el hours-c">
-            <p class="big-text" id="hours">0</p>
-            <span>ساعات</span>
-        </div>
-        <div class="countdown-el mins-c">
-            <p class="big-text" id="mins">0</p>
-            <span>دقائق</span>
-        </div>
-        <div class="countdown-el seconds-c">
-            <p class="big-text" id="seconds">0</p>
-            <span>ثوان</span>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="card">
-        <p style="
-        margin-right: 15%;">
-            هداية
-            <img src="dodo.jpg" alt="" />
-        </p>
-    </div>
-</body>
-
+        <script src="family.js"></script>
+	</body>
 </html>
