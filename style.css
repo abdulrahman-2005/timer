@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Noto+Kufi+Arabic:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
 
 * {
+    direction: rtl;
     box-sizing: border-box;
     font-family: 'Aref Ruqaa', serif;
     padding: 0;
     margin: 0;
-    color: rgb(155, 148, 221);
 }
 
 body {
@@ -17,14 +16,16 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding-bottom: 100px;
 }
 
 h1 {
+    color: rgb(213, 218, 218);
     text-align: center;
-    font-family: 'Lemonada', cursive;
     font-weight: bold;
-    font-size: 8vw;
-    margin-top: 5rem;
+    font-size: 12vw;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .countdown-container {
@@ -45,10 +46,12 @@ h1 {
     font-size: 6rem;
     line-height: 1;
     margin: 1rem 2rem;
+
 }
 
 .countdown-el {
     text-align: center;
+    box-shadow: 0px 0px 20px 20px rgb(10, 4, 34);
 }
 
 .countdown-el span {
@@ -56,11 +59,38 @@ h1 {
 }
 
 .card {
-    background-color: white;
-    width:60%;
-    margin-bottom: 100px;
+    font-size: 8vw;
+    background-color: rgba(2, 20, 54, 0.637);
+    color: white;
+    width: 45%;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 12px;
+    transition: 1s;
 }
 
+
 img {
-    width: 100px;
+    position: relative;
+    background-size: cover;
+    float: left;
+    width: 40%;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.show {
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    border-bottom-left-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 95%;
+        font-size: 20vw;
+    }
 }
