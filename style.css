@@ -117,7 +117,6 @@ img {
     outline: none;
     border: none;
     border-radius: 12px;
-    transition: 1s;
 }
 
 .inner:hover {
