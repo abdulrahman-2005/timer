@@ -1,5 +1,5 @@
 const messages = {
-	dodo: "هلا asd asd fadhf liajshdlf kjhaslkdjf hkljasdhfkljsadhlkf  والله يابوي، هع هع هع هع هاااو",
+	dodo: "هلاوالله يابوي، هع هع هع هع هاااو",
 	body: "",
 	jehan: "",
 	fatema: "",
