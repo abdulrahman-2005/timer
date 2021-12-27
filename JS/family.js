@@ -1,20 +1,47 @@
 const messages = {
-	dodo: "كل سنة وانت طيب يا بابا",
+	dodo: "كل سنة❤️❤️ وانت طيب يا بابا",
 	body: "اهلا ومرحبا بك يا حاج عازمي، شنو أخيارك حلو",
-	jehan: "",
-	fatema: "",
-	mozo: "",
-	soso: "",
-	osha: "",
-	hagar: "",
+	jehan: "مش عارفة، كل عام وانت طيب❤️❤️",
+	fatema: "❤️كل سنة وانت طيب يا بابي",
+	mozo: "باباااا، بحبك، ههه❤️❤️",
+	soso: "❤️❤️بحيك يا بابا موت قد كل الدنيا❤️❤️",
+	osha: "كل عام ❤️ وانت بخير ❤️ يا ابتي",
+	hagar: "هخخخخخ، ايه يا بابا❤️",
+	khalid: "رسالة خالد"
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let locked = true;
 
 tryToPass();
 function tryToPass() {
 	let getPassword = prompt("الرقم السري ''دوس ok لو مش عارف''");
-	if (getPassword.valueOf() === "aaa") {
+	if (getPassword.valueOf() === "zemo1180") {
 		locked = false;
 	}
 }

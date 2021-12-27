@@ -76,6 +76,7 @@ h1 {
 }
 
 .open {
+	position: relative;
     font-size: 3vw;
     height: auto;
 }
@@ -123,7 +124,8 @@ img {
     border: none;
     border-radius: 12px;
 	font-weight: bolder;
-	box-shadow: 0px 0px 16px 16px rgb(255, 255, 255)
+	box-shadow: 0px 0px 16px 16px rgb(255, 255, 255);
+	margin-top: 20px;
 }
 
 .inner:hover {
