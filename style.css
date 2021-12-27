@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
 
 html {
-    background: url("./gg.jpg");
+    background: url("./bg.jpg");
 	background-size: cover;}
 
 * {
@@ -112,18 +112,11 @@ img {
 .inner {
     width: 70px;
     height: 40px;
-    background-color: rgb(19, 4, 47);
+    background-color: #fff;
+    box-shadow: 5px 5px rgb(35, 5, 90);
     font-size: 20px;
     outline: none;
     border: none;
     border-radius: 12px;
 }
-
-.inner:hover {
-    background-color: #fff;
-    box-shadow: 5px 5px black;
-}
-
-
-
 
