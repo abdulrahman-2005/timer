@@ -25,6 +25,12 @@ function countdown() {
 	hoursEl.textContent = formatTime(hours);
 	minsEl.textContent = formatTime(mins);
 	secondsEl.textContent = formatTime(seconds);
+	if (seconds < 0) {
+		daysEl.textContent = "00"
+		hoursEl.textContent =  "00"
+		minsEl.textContent = "00"
+		secondsEl.textContent =  "00"
+	}
 }
 
 function formatTime(time) {

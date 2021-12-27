@@ -32,10 +32,10 @@ function openMessage(sender, direction) {
 		messageEl.classList.add("open");
 		messageEl.innerHTML = `
     <p>
-        <img src="dodo.jpg" alt="" class="${direction}"/>
+        <img src="images/${sender}.jpg" alt="" class="${direction}"/>
         ${messages[sender]}
     </p>
-    <button class="inner" style="float: ${direction} top"onclick="playSound(${sender})">🔊</button>`;
+    <button class="inner" style="float: ${direction} top"onclick="playSound(${sender})">رسالة صوتية 🔊🔊</button>`;
 	} else {
 		alert(`هاها، لسة فاضل ${days} ايام`);
 	}
