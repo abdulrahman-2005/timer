@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Countdown Timer</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="JS/script.js" defer></script>
-	</head>
 
-	<body>
-		<h1>كل سنة وانت طيب يا بابا</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="JS/script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
 
-		<div class="countdown-container" style="direction: ltr">
-			<div class="countdown-el days-c">
-				<p class="big-text" id="days">0</p>
-				<span>أيام</span>
-			</div>
-			<div class="countdown-el hours-c">
-				<p class="big-text" id="hours">0</p>
-				<span>ساعات</span>
-			</div>
-			<div class="countdown-el mins-c">
-				<p class="big-text" id="mins">0</p>
-				<span>دقائق</span>
-			</div>
-			<div class="countdown-el seconds-c">
-				<p class="big-text" id="seconds">0</p>
-				<span>ثوان</span>
-			</div>
-		</div>
+<body>
+    <h1>كل سنة وانت طيب يا بابا</h1>
 
-			<p style="font-size: 12vw; margin-top: 100px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.739);">الرسائل الواردة ❤️</p>
-		
-            <div class="card" id="dodo" onclick="openMessage('dodo', 'left')">
-                <p">
-                    <img src="images/dodo.jpg" alt="" class="left"/>
-                    هداية
-                </p>
-            </div>
-            <div class="card" id="body" onclick="openMessage('body', 'right')">
-                <p>
-                    <img src="images/body.jpg" alt="" class="right"/>
-                    عبدالرحمن
-                </p>
-            </div>
-			
-            <div class="card" id="fatema" onclick="openMessage('fatema', 'left')">
-                <p>
-                    <img src="images/fatema.jpg" alt="" class="left"/>
-                    فاطمة
-                </p>
-            </div>
-			
-            <div class="card" id="mozo" onclick="openMessage('mozo', 'right')">
-                <p>
-                    <img src="images/mozo.jpg" alt="" class="right"/>
-                    حمزة
-                </p>
-            </div>
-			
-            <div class="card" id="jehan" onclick="openMessage('jehan', 'left')">
-                <p>
-                    <img src="images/jehan.jpg" alt="" class="left"/>
-                    جيهان
-                </p>
-            </div>
-			
-            <div class="card" id="osha" onclick="openMessage('osha', 'right')">
-                <p>
-                    <img src="images/osha.jpg" alt="" class="right"/>
-                    عائشة
-                </p>
-            </div>
-			
-            <div class="card" id="soso" onclick="openMessage('soso', 'left')">
-                <p>
-                    <img src="images/soso.jpg" alt="" class="left"/>
-                    سليمان
-                </p>
-            </div>
-			
-            <div class="card" id="hagar" onclick="openMessage('hagar', 'right')">
-                <p>
-                    <img src="images/hagar.jpg" alt="" class="right"/>
-                    هاجر
-                </p>
-            </div>
-            <div class="card" id="khalid" onclick="openMessage('khalid', 'left')">
-                <p>
-                    <img src="images/khalid.jpg" alt="" class="left"/>
-                    خالد
-                </p>
-            </div>
-        
-        <script src="JS/family.js"></script>
-	</body>
+    <div class="countdown-container" style="direction: ltr">
+        <div class="countdown-el days-c">
+            <p class="big-text" id="days">0</p>
+            <span>أيام</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>ساعات</span>
+        </div>
+        <div class="countdown-el mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>دقائق</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>ثوان</span>
+        </div>
+    </div>
+
+    <p
+        style="font-size: 12vw; margin-top: 100px; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.739);">
+        الرسائل الواردة ❤️</p>
+
+    <div class="card" id="dodo" onclick="openMessage('dodo', 'left')">
+        <p">
+            <img src="images/dodo.jpg" alt="" class="left" />
+            هداية
+            </p>
+    </div>
+    <div class="card" id="body" onclick="openMessage('body', 'right')">
+        <p>
+            <img src="images/body.jpg" alt="" class="right" />
+            عبدالرحمن
+        </p>
+    </div>
+
+    <div class="card" id="fatema" onclick="openMessage('fatema', 'left')">
+        <p>
+            <img src="images/fatema.jpg" alt="" class="left" />
+            فاطمة
+        </p>
+    </div>
+
+    <div class="card" id="mozo" onclick="openMessage('mozo', 'right')">
+        <p>
+            <img src="images/mozo.jpg" alt="" class="right" />
+            حمزة
+        </p>
+    </div>
+
+    <div class="card" id="jehan" onclick="openMessage('jehan', 'left')">
+        <p>
+            <img src="images/jehan.jpg" alt="" class="left" />
+            جيهان
+        </p>
+    </div>
+
+    <div class="card" id="osha" onclick="openMessage('osha', 'right')">
+        <p>
+            <img src="images/osha.jpg" alt="" class="right" />
+            عائشة
+        </p>
+    </div>
+
+    <div class="card" id="soso" onclick="openMessage('soso', 'left')">
+        <p>
+            <img src="images/soso.jpg" alt="" class="left" />
+            سليمان
+        </p>
+    </div>
+
+    <div class="card" id="hagar" onclick="openMessage('hagar', 'right')">
+        <p>
+            <img src="images/hagar.jpg" alt="" class="right" />
+            هاجر
+        </p>
+    </div>
+    <div class="card" id="khalid" onclick="openMessage('khalid', 'left')">
+        <p>
+            <img src="images/khalid.jpg" alt="" class="left" />
+            خالد
+        </p>
+    </div>
+
+    <script src="JS/family.js"></script>
+</body>
+
 </html>
