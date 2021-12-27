@@ -6,7 +6,7 @@ const messages = {
 	mozo: "باباااا، بحبك، ههه❤️❤️",
 	soso: "❤️❤️بحيك يا بابا موت قد كل الدنيا❤️❤️",
 	osha: "كل عام ❤️ وانت بخير ❤️ يا ابتي",
-	hagar: "هخخخخخ، ايه يا بابا❤️",
+	hagar: "هخ خ خ خ خ، ايه يا بابا❤️",
 	khalid: "رسالة خالد"
 };
 
@@ -41,7 +41,7 @@ let locked = true;
 tryToPass();
 function tryToPass() {
 	let getPassword = prompt("الرقم السري ''دوس ok لو مش عارف''");
-	if (getPassword.valueOf() === "zemo1180") {
+	if (getPassword.valueOf() === "HAHAWEBSITEPROTECTEDBYABDULRAHMAN") {
 		locked = false;
 	}
 }
