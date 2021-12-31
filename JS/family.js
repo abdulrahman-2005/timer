@@ -6,35 +6,10 @@ const messages = {
 	mozo: "باباااا، بحبك، ههه❤️❤️",
 	soso: "❤️❤️بحيك يا بابا موت قد كل الدنيا❤️❤️",
 	osha: "كل عام ❤️ وانت بخير ❤️ يا ابتي",
-	hagar: "هخ خ خ خ خ، ايه يا بابا❤️",
-	khalid: "رسالة خالد"
+	hagar: "هخ خ خ خ خ، ايه يا بابا😆",
+	khalid: "كل سنة وانت طيب يا بابا",
+	donia: "كل سنة وانت طيب يا عمو🥰",
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let locked = true;
 
@@ -51,8 +26,19 @@ if (hours < 12) {
 	alert("مبروك 42 ةعقبال 100 سنة");
 }
 
+let nonVoiced = ["mozo", "soso", "hagar", "khalid"];
+function included(name) {
+	for (i in nonVoiced) {
+		if (nonVoiced.includes(name)) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+}
 function openMessage(sender, direction) {
 	let messageEl = document.getElementById(sender);
+	let voiceMessage = `<button class="inner" style="float: ${direction} top"onclick="playSound('${sender}')">رسالة صوتية 🔊🔊</button>`;
 	if (locked === false) {
 		messageEl.classList.add("open");
 		messageEl.innerHTML = `
@@ -60,9 +46,7 @@ function openMessage(sender, direction) {
         <img src="images/${sender}.jpg" alt="" class="${direction}"/>
         ${messages[sender]}
     </p>
-    <button class="inner" style="float: ${direction} top"onclick="playSound('${sender}')">رسالة صوتية 🔊🔊</button>`;
-	} else {
-		alert(`هاها، لسة فاضل ${days} ايام`);
+    ${included(sender) ? voiceMessage : ""}`;
 	}
 }
 
