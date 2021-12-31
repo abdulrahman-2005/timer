@@ -41,7 +41,7 @@ let locked = true;
 tryToPass();
 function tryToPass() {
 	let getPassword = prompt("الرقم السري ''دوس ok لو مش عارف''");
-	if (getPassword.valueOf() === "HAHAWEBSITEPROTECTEDBYABDULRAHMAN") {
+	if (getPassword.valueOf() === "zemo1180") {
 		locked = false;
 	}
 }
